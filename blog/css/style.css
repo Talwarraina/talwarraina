@@ -1,0 +1,154 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+
+
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+    nav{
+        font-size:  1rem; 
+        padding: 0.8rem;
+        color: #fff;
+        background-color: white;
+        text-align: center;
+        font-family: 'Serif';
+        font-weight: normal;
+        display: inline-block;
+        margin-right: 10px;
+        border-top: #000;
+    }
+
+h1 {
+    
+    font-size: 6rem;
+    margin: 0;
+    color:#333; 
+    text-shadow:.09375rem .09375rem .09375rem #000;
+    text-align:center;
+    transform: skewY(-10deg);
+    font-family: sans-serif;
+    padding-top: 8rem;
+    padding-bottom: 20rem;
+}
+
+h1 span {
+    text-transform: uppercase;
+    display:inline-block;
+    padding: 10px 20px;
+    background-color: #bd4f61;
+    color:blanchedalmond;
+    border-radius: 20px 0; 
+  font-size: 8rem;
+}
+
+h3 {
+
+}
+
+@font-face {
+    font-family:sans-serif;
+    src: url(../fonts/sans-serif/);
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+
+    font-family:Serif;
+    src: url(../fonts/serif/);
+    font-style:normal;
+    font-weight:normal;
+}
+
+li {
+    padding-top: 3rem;
+    border-top: #000;
+    margin: 1rem;
+    display: inline-block;  
+    text-decoration: none;      
+    margin: 3rem;    
+    font-size: 4rem;
+    text-align: left;
+    color: black;
+}
+
+figure{
+    padding-top: 3rem;
+    border-top: #000;
+    margin: 1rem;
+    display: inline-block;  
+    text-decoration: none;      
+    margin: 3rem;    
+    font-size: 4rem;
+    text-align: left;
+    color: black;
+}
+nav {
+    padding-top: 0rem;
+    margin-top: 0.25;
+    border-top: #000;
+    width: 100%;
+    line-height: 0.5;
+    text-align: left;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    border: solid black;
+    font-family: sans-serif;
+    
+}
+
+a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: navy;
+    
+}
+
+html {
+    font-family: sans-serif; 
+  }
