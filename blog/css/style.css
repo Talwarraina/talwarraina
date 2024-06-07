@@ -1,154 +1,163 @@
-/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
-
-        /* 
-        
-        Spacing 
-
-            - padding (shorthand and/or specific properties like padding-bottom, etc.)
-
-            - margin, (shorthand and/or specific properties like margin-top, etc.)
-
-            - letter-spacing, word-spacing, line-height
-
-            - width, max-width, min-width
-            - height, max-height, min-height
 
 
 
+.charcoal {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffebcd;
+  text-transform: uppercase;
+  text-shadow: 3px 3px #808080;
+}
 
-        Typography 
-
-            - font-family, font-size, font-style, font-weight
-
-            - text-decoration, text-align
-
-            - color
-
-            - text-shadow, text-transform
-
-        Box, Layout and Border 
-
-            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
-
-            - box-shadow
-
-            - display, float, align-items, align-content
-
-            - grid-template-columns, grid-column-gap
-
-            - transform
-
-        Other
-
-            - :nth()-child (to target specific child elements)
-
-            - :focus, :hover, :active (to target link states)
-
-            - @font-face or @import (to import typefaces)
-
-        */
-
-
-/* ------ START WRITING YOUR CODE BELOW ------ */
-
-    nav{
-        font-size:  1rem; 
-        padding: 0.8rem;
-        color: #fff;
-        background-color: white;
-        text-align: center;
-        font-family: 'Serif';
-        font-weight: normal;
-        display: inline-block;
-        margin-right: 10px;
-        border-top: #000;
-    }
-
+  
 h1 {
-    
-    font-size: 6rem;
-    margin: 0;
-    color:#333; 
-    text-shadow:.09375rem .09375rem .09375rem #000;
-    text-align:center;
-    transform: skewY(-10deg);
-    font-family: sans-serif;
-    padding-top: 8rem;
-    padding-bottom: 20rem;
-}
-
-h1 span {
-    text-transform: uppercase;
-    display:inline-block;
-    padding: 10px 20px;
-    background-color: #bd4f61;
-    color:blanchedalmond;
-    border-radius: 20px 0; 
+  
+  font-size: 2rem;
+  margin: 0;
+  color:#333; 
+  text-shadow:.09375rem .09375rem .09375rem #000;
+  text-align:center;
+  transform: skewY(-10deg);
+  font-family: sans-serif;
+  padding-top: 1rem;
+  padding-bottom: 50px;
+  }
+  
+  h1 span {
+  text-transform: uppercase;
+  display:inline-block;
+  padding: 10px 10px;
+  background-color: #bd4f61;
+  color:blanchedalmond;
+  border-radius: 20px 0; 
   font-size: 8rem;
-}
-
-h3 {
-
-}
-
-@font-face {
-    font-family:sans-serif;
-    src: url(../fonts/sans-serif/);
-    font-style:normal;
-    font-weight:normal;
-}
-@font-face {
-
-    font-family:Serif;
-    src: url(../fonts/serif/);
-    font-style:normal;
-    font-weight:normal;
-}
-
-li {
-    padding-top: 3rem;
-    border-top: #000;
-    margin: 1rem;
-    display: inline-block;  
-    text-decoration: none;      
-    margin: 3rem;    
-    font-size: 4rem;
-    text-align: left;
-    color: black;
-}
-
-figure{
-    padding-top: 3rem;
-    border-top: #000;
-    margin: 1rem;
-    display: inline-block;  
-    text-decoration: none;      
-    margin: 3rem;    
-    font-size: 4rem;
-    text-align: left;
-    color: black;
-}
+  }
+  
+ /* Add this CSS style code to your HTML file to replicate the navigation bar */
 nav {
-    padding-top: 0rem;
-    margin-top: 0.25;
-    border-top: #000;
+  background-color: #fff; /* White background */
+  border-bottom: 1px solid #000; /* Thin black bottom border */
+  padding: 20px 0; /* Some padding above and below the nav items */
+  border: solid black;
+  position: sticky; /* Make the navbar sticky */
+  top: 0; /* Stick it to the top */
+  z-index: 100; /* Ensure it appears above other elements */
+}
+
+.subscribe-button {
+  background: linear-gradient(to bottom, #4b6cb7, #182848);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  text-shadow: 1px 1px #000;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+
+nav ul {
+  list-style-type: none; /* Remove default list styling */
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+ 
+}
+
+nav ul li {
+  display: inline; /* Display nav items in a line */
+}
+
+nav ul li a {
+  font-weight: bold; /* Bold text for nav links */
+  font-size:1.5rem; /* Larger font size for readability */
+  color: navy; /* Black text color */
+  text-decoration: none; /* No underline on links */
+  margin-right: 40px; /* Spacing between menu items, adjust as needed */
+}
+
+      
+/* Set up a container for the entire page */
+.container {
     width: 100%;
-    line-height: 0.5;
-    text-align: left;
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    border: solid black;
-    font-family: sans-serif;
-    
+    max-width: 1200px; /* Optional: Set a maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  /* Header */
+  .header {
+
+    padding: 10px;
+  }
+  
+/* Assuming your .main-section class contains the main content */
+.main-section {
+  float: left; /* Float the main content to the left */
+  width: 80%; /* Adjust as needed */
+  padding: 0px;
+
 }
 
-a {
-    text-decoration: none;
-    font-family: sans-serif;
-    color: navy;
-    
+.main-section img {
+  float: left; /* Float the image to the left */
+  margin: 10px; /* Add some spacing between the image and text */
+  max-width: 20%; /* Set the maximum width of the image */
+  height: 10%; /* Maintain aspect ratio */
 }
 
-html {
-    font-family: sans-serif; 
+
+.article-image {
+  display: inline-block; /* Display images in a line */
+  margin-right: 10px; /* Add spacing between images */
+  max-width: 20%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  padding: 5px;
+  float: center; 
+}
+
+.article-image img {
+  max-width: 100%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.article-image figcaption {
+  font-style: italic; /* Style the caption as desired */
+}
+  /* Aside section (right) */
+  .aside {
+    float: right;
+    width: 15%; /* Adjust as needed */
+    padding: 10px;
+  
+  
+  }
+  .aside img {
+    float: center; /* Float the image to the left */
+    margin-right: 0px; /* Add some spacing between the image and text */
+    max-width: 80%; /* Set the maximum width of the image */
+    height: auto; /* Maintain aspect ratio */
+  }
+  /* Footer */
+  .footer {
+    clear: both; /* Clear floats */
+     margin: 0 auto;
+  }
+  
+  .footer a {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between links */
+  }
+  .footer ul {
+    display: inline-block;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    list-style: none; /* Remove bullet points */
+    float:  right;
+    
+  }
+  
+  .footer li {
+    display: inline; /* Display LI elements inline */
+    margin-right: 0px; /* Adjust spacing between items */
+      text-align: right;
   }
